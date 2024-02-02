@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import AmountBillTip from "./components/AmountBillTip";
+import BillAmount from "./components/BillAmount";
+import TipSlider from "./components/TipSlider";
+import TotalAmount from "./components/TotalAmount";
+
+const style = { width: 600, margin: 50 };
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [enteredAmount, setEnteredAmount] = useState(122.5);
+  const [amount, setAmount] = useState(122.5);
+  const [tip, setTip] = useState(10);
+  const VAT = 25;
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BillAmount />
+      <TipSlider /> {/* how do I add a SLIDER??? */}
+      <AmountBillTip amount={enteredAmount} tip={tip} />
+      {/* add the total amount (bill amount with tip and VAT) */}
+      <TotalAmount amount={amount} VAT={VAT} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
