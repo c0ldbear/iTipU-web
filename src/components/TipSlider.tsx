@@ -6,6 +6,7 @@ function TipSlider() {
     <div className="tipSlider">
       <h2>Tip: {tipAmount}%</h2>
       {/* add slider with text field showing the tip percentage */}
+      <input type="range" />
     </div>
   );
 }
