@@ -1,5 +1,3 @@
-import React from "react";
-
 interface TotalAmountProps {
   amount: number;
   VAT: number;

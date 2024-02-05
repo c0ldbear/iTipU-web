@@ -5,8 +5,6 @@ import BillAmount from "./components/BillAmount";
 import TipSlider from "./components/TipSlider";
 import TotalAmount from "./components/TotalAmount";
 
-const style = { width: 600, margin: 50 };
-
 function App() {
   const [enteredAmount, setEnteredAmount] = useState(122.5);
   const [amount, setAmount] = useState(122.5);

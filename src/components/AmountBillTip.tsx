@@ -1,5 +1,3 @@
-import React from "react";
-
 interface AmountBillTipProps {
   amount: number;
   tip: number;

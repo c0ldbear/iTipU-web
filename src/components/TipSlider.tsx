@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-
 function TipSlider() {
-  const [tipAmount, setTipAmount] = useState(0);
+  const tipAmount = 0;
   return (
     <div className="tipSlider">
       <h2>Tip: {tipAmount}%</h2>
