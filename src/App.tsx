@@ -14,9 +14,8 @@ function App() {
   return (
     <>
       <BillAmount />
-      <TipSlider /> {/* how do I add a SLIDER??? */}
+      <TipSlider />
       <AmountBillTip amount={enteredAmount} tip={tip} />
-      {/* add the total amount (bill amount with tip and VAT) */}
       <TotalAmount amount={amount} VAT={VAT} />
     </>
   );

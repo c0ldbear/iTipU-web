@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Learn TDD with iTipU project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nice that you want to learn Test-Driven Development (TDD)! Here you find a simple app that can help you calculate the amount of your bill when you want to add a tip! It (should) calculate the amount when there is a tip added and the total amount when taxes are applied too. 
 
-Currently, two official plugins are available:
+## Assignment
+The project contains a View with properties (constant values), and it is **your task** with TDD to implement a View Model that helps the view calculate the Bill Amount + Tip and the Total Amount (Bill Amount + Tip + Taxes/VAT). 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instructions
 
-## Expanding the ESLint configuration
+Clone this project, and check out the `start` branch - this is where you will start working.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
+git clone <correct url/ssh path>
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+git checkout start
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Use TDD methodology when solving the task. Remember: Write the test, let it fail, write the code that needs to pass the test and repeat, see image below.
+![Test-Drive Development Workflow](https://www.xeridia.co.uk/sites/default/files/contenidos/blog/test-driven-development.png)
+
+This project uses `yarn` as a package manager, so to get started:
+
+```bash
+yarn install
+```
+
+then
+
+```bash
+yarn dev
+```
+
+To run the test suit (in branch `start`):
+```bash
+yarn test
+```
